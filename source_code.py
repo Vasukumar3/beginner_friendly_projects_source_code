@@ -1,7 +1,16 @@
 # Number Guessing Game
+"""
+Title: Number Guessing Game
+Description: This game generates a random number between 1 and 100. The player has a maximum of 3 attempts to guess the number correctly. 
+After each incorrect guess, the program provides feedback whether the guess is too low or too high. If the player uses all attempts without guessing correctly, the correct number is revealed.
+"""
 import random
 
 def number_guessing_game():
+    """
+    Function: number_guessing_game
+    Description: Implements the number guessing game logic. The function selects a random number and allows the user to guess it within a limited number of attempts.
+    """
     number = random.randint(1, 100)
     attempts = 0
     max_attempts = 3
@@ -26,7 +35,15 @@ def number_guessing_game():
 number_guessing_game()
 
 # Simple Calculator
+"""
+Title: Simple Calculator
+Description: A calculator program that performs basic arithmetic operations: addition, subtraction, multiplication, and division. The user inputs two numbers and an operator, and the result of the operation is displayed. The program continues until the user decides to exit.
+"""
 def calculator():
+    """
+    Function: calculator
+    Description: Implements a simple calculator with support for basic arithmetic operations.
+    """
     print("Simple Calculator")
     print("Operations: +, -, *, /")
 
@@ -55,7 +72,15 @@ def calculator():
 calculator()
 
 # To-Do List
+"""
+Title: To-Do List
+Description: A program that allows users to manage their tasks. Users can add new tasks, view existing ones, and remove completed tasks. The program continues running until the user chooses to exit.
+"""
 def to_do_list():
+    """
+    Function: to_do_list
+    Description: Provides a simple menu to add, view, and delete tasks from a list.
+    """
     tasks = []
 
     while True:
@@ -91,7 +116,15 @@ def to_do_list():
 to_do_list()
 
 # Simple Quiz App
+"""
+Title: Simple Quiz App
+Description: A quiz application with predefined questions. Users can answer the questions, and the app provides feedback and calculates the final score.
+"""
 def quiz_app():
+    """
+    Function: quiz_app
+    Description: Runs a quiz with multiple-choice questions and tracks the user's score.
+    """
     questions = {
         "What is the capital of France?": "Paris",
         "What is 2 + 2?": "4",
@@ -115,7 +148,15 @@ def quiz_app():
 quiz_app()
 
 # ATM Simulation
+"""
+Title: ATM Simulation
+Description: A program that simulates basic ATM functionalities such as checking balance, depositing money, and withdrawing money. The user can perform multiple transactions until they choose to exit.
+"""
 def atm_simulation():
+    """
+    Function: atm_simulation
+    Description: Simulates an ATM with options for balance inquiry, deposit, and withdrawal.
+    """
     balance = 1000
 
     print("Welcome to the ATM!")
